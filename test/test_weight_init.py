@@ -1,7 +1,7 @@
 import numpy as np
 
 # from src.RNN import *
-
+np.set_printoptions(linewidth=200)
 
 def init_weights(dims, hidden_idx, seed):
     if seed is not None:
@@ -30,7 +30,8 @@ hidden_idx = [1]
 seed = 13337
 
 weight_sets = init_weights(dims, hidden_idx, seed)
-print(weight_sets[1][0].shape)
+# print(len(weight_sets))
+print(weight_sets[0][1][0])
 
 weights = {
     "input_to_hidden": None,
